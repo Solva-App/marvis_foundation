@@ -1,0 +1,32 @@
+{
+  "name": "donation-backend",
+  "version": "1.0.0",
+  "description": "Backend API for needs submission, Paystack donations, and email moderation",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "firebase-admin": "^12.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "resend": "^3.2.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^20.12.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
